@@ -2,11 +2,11 @@ import React from "react";
 import "../App.css";
 import Icon from "@mui/material/Icon";
 
-function InsideSidebar() {
+function InsideSidebar({text, Icon}) {
   return (
     <div className="inside-container">
-      <Icon />
-      <h2>text</h2>
+      <Icon  className="icon"/>
+      <h2>{text}</h2>
     </div>
   );
 }

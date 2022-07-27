@@ -13,16 +13,40 @@
   border-radius: 25px;
   align-items: center;
   cursor: pointer;
-  padding: 0 10px;
+  padding: 10px 20px;
 }
 
-.inside-container:hover{
-  background-color: #E1E8ED;
+.inside-container:hover {
+  background-color: #e1e8ed;
   transition: color 100ms ease-out;
 }
 
-.inside-container > h2{
+.inside-container > .icon, .twitter-icon {
+  font-size: 2em;
+}
+
+.inside-container > h2 {
   margin-left: 20px;
   font-weight: 400;
-  font-size: 1.7rem;
+  font-size: 1.6rem;
+}
+
+.twitter-icon{
+  color: #1DA1F2;
+  border-radius: 50px;
+  margin:0 20px;
+  font-size: 3rem !important;
+}
+
+.sidebar >.tweet-button{
+ border-radius: 25px;
+ background-color: #1DA1F2;
+ color: white;
+ padding: 10px;
+ margin: 20px 20px 0 20px;
+ font-size: 15px;
+}
+
+.sidebar >.tweet-button:hover{
+  color: #1DA1F2;
 }
