@@ -6,6 +6,8 @@
   margin: 0 auto;
 }
 
+/* inside container styling */
+
 .inside-container {
   display: flex;
   border-radius: 25px;
@@ -14,3 +16,13 @@
   padding: 0 10px;
 }
 
+.inside-container:hover{
+  background-color: #E1E8ED;
+  transition: color 100ms ease-out;
+}
+
+.inside-container > h2{
+  margin-left: 20px;
+  font-weight: 400;
+  font-size: 1.7rem;
+}
