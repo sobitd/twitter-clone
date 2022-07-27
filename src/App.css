@@ -21,7 +21,8 @@
   transition: color 100ms ease-out;
 }
 
-.inside-container > .icon, .twitter-icon {
+.inside-container > .icon,
+.twitter-icon {
   font-size: 2em;
 }
 
@@ -31,22 +32,52 @@
   font-size: 1.6rem;
 }
 
-.twitter-icon{
-  color: #1DA1F2;
+.twitter-icon {
+  color: #1da1f2;
   border-radius: 50px;
-  margin:0 20px;
+  margin: 0 20px;
   font-size: 3rem !important;
 }
 
-.sidebar >.tweet-button{
- border-radius: 25px;
- background-color: #1DA1F2;
- color: white;
- padding: 10px;
- margin: 20px 20px 0 20px;
- font-size: 15px;
+.sidebar > .tweet-button {
+  border-radius: 25px;
+  background-color: #1da1f2;
+  color: white;
+  padding: 10px;
+  margin: 20px 20px 0 20px;
+  font-size: 15px;
 }
 
-.sidebar >.tweet-button:hover{
-  color: #1DA1F2;
+.sidebar > .tweet-button:hover {
+  color: #1da1f2;
 }
+
+/* Create Tweet Component */
+.tweet-container {
+  padding-bottom: 10px;
+  border-bottom: 8px solid #e1e8ed;
+  padding-right: 10px;
+}
+
+.tweet-container > form {
+  display: flex;
+  flex-direction: column;
+}
+
+.create-tweet-box {
+  display: flex;
+  padding: 20px;
+}
+
+.create-tweet-box > input {
+  flex: 1;
+  margin-left: 20px;
+  font-size: 20px;
+  border: none;
+}
+
+.create-tweet-box > input:focus {
+  outline: none;
+}
+
+

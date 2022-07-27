@@ -5,6 +5,16 @@ import { Avatar, Button } from "@mui/material";
 
 const CreateTweet = () => {
 
+    const [tweetText, setTweetText] = useState("")
+    const [tweetImage, setTweetImage] = useState("")
+
+    function handleCreateTweet(e){
+        e.preventDefault()
+        const tweetData = {
+            
+        }
+
+    }
 
   return( 
   <div className="tweet-container">
