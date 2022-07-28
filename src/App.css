@@ -56,7 +56,7 @@
 .tweet-container {
   padding-bottom: 10px;
   border-bottom: 8px solid #e1e8ed;
-  padding-right: 10px;
+  padding: 10px;
 }
 
 .tweet-container > form {
@@ -85,10 +85,14 @@
 .display-tweets {
   display: flex;
   align-items: flex-start;
-  border-bottom: 1px solid #1da1f2;
+  border-bottom: 1px solid #E1E8ED;
   padding-right: 10px;
 }
 
+.display-tweets:hover{
+  background-color: #F5F8FA;
+  transition: 0.2s ease-in-out;
+}
 .user-avatar {
   padding: 20px;
 }
@@ -124,3 +128,31 @@
   justify-content: space-between;
   margin-top: 10px;
 }
+
+/* feed component styling */
+.feed {
+  flex: 0.6;
+  border-right: #E1E8ED 1px solid;
+  min-width: fit-content;
+  overflow-y: scroll;
+  margin-left: 80px;
+}
+
+.feed-header {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 100;
+  border: 1px solid #E1E8ED;
+  padding: 15px 20px;
+}
+
+.feed::-webkit-scrollbar{
+  display: none;
+}
+
+.feed-header > h2 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
