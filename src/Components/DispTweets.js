@@ -30,7 +30,7 @@ const DispTweets = ({
             <h3>
               {profileName}{" "}
               <span className="verified-badge">
-                {verified && VerifiedUser} {username}
+                {verified && <VerifiedUser className="badge" />} {username}
               </span>
             </h3>
           </div>
