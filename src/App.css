@@ -81,3 +81,20 @@
 }
 
 
+/* display tweets component styling */
+
+.display-tweets{
+  display: flex;
+  align-items: flex-start;
+  border-bottom: 1px solid #1da1f2;
+  padding-right: 10px;
+}
+
+.tweet-footer{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+
+
