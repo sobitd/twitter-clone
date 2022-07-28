@@ -18,7 +18,11 @@ const Trends = () => {
       </div>
       <div className="widgets-wrapper">
         <h2> What's Happening</h2>
-        <TwitterTweetEmbed tweetId="933354946111705097" />
+        <TwitterTimelineEmbed
+          sourceType="profile"
+          screenName="RailaOdinga"
+          options={{ height: 400 }}
+        />
         <TwitterTimelineEmbed
           sourceType="profile"
           screenName="reactjs"
