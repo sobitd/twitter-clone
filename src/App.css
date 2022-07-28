@@ -85,12 +85,12 @@
 .display-tweets {
   display: flex;
   align-items: flex-start;
-  border-bottom: 1px solid #E1E8ED;
+  border-bottom: 1px solid #e1e8ed;
   padding-right: 10px;
 }
 
-.display-tweets:hover{
-  background-color: #F5F8FA;
+.display-tweets:hover {
+  background-color: #f5f8fa;
   transition: 0.2s ease-in-out;
 }
 .user-avatar {
@@ -132,7 +132,7 @@
 /* feed component styling */
 .feed {
   flex: 0.6;
-  border-right: #E1E8ED 1px solid;
+  border-right: #e1e8ed 1px solid;
   min-width: fit-content;
   overflow-y: scroll;
   margin-left: 80px;
@@ -143,11 +143,11 @@
   top: 0;
   background-color: white;
   z-index: 100;
-  border: 1px solid #E1E8ED;
+  border: 1px solid #e1e8ed;
   padding: 15px 20px;
 }
 
-.feed::-webkit-scrollbar{
+.feed::-webkit-scrollbar {
   display: none;
 }
 
@@ -156,3 +156,46 @@
   font-weight: 700;
 }
 
+/* trends component styling */
+.widgets {
+  flex: 0.2;
+  overflow-y: scroll;
+}
+
+.widgets::-webkit-scrollbar {
+  display: none;
+}
+
+.search-wrapper {
+  display: flex;
+  align-items: center;
+  background-color: #f5f8fa;
+  padding: 10px;
+  margin: 10px 0 0 20px;
+  border-radius: 20px;
+}
+
+.search-wrapper > input {
+  border: none;
+  background-color: #f5f8fa;
+}
+
+.search-wrapper > input:focus {
+  outline: none;
+}
+
+.search {
+  color: #aab8c2;
+}
+
+.widgets-wrapper {
+  background-color: #f5f8fa;
+  border-radius: 20px;
+  margin: 15px 0 0 20px;
+  padding: 20px;
+}
+
+.widgets-wrapper > h2 {
+  font-size: 18px;
+  font-weight: 700;
+}
