@@ -1,14 +1,15 @@
-import React from 'react';
-import './App.css';
-import Sidebar from './Components/Sidebar';
-import MainFeedBox from './Components/MainFeedBox';
+import React from "react";
+import "./App.css";
+import Sidebar from "./Components/Sidebar";
+import MainFeedBox from "./Components/MainFeedBox";
+import Trends from "./Components/Trends";
 
 function App() {
   return (
     <div className="app">
-      <Sidebar/>
+      <Sidebar />
       <MainFeedBox />
-
+      <Trends />
     </div>
   );
 }

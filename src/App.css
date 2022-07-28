@@ -158,8 +158,9 @@
 
 /* trends component styling */
 .widgets {
-  flex: 0.2;
+  flex: 0.3;
   overflow-y: scroll;
+  width: auto;
 }
 
 .widgets::-webkit-scrollbar {
