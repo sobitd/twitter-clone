@@ -18,9 +18,7 @@ const MainFeedBox = () => {
         <h2>Home</h2>
         <CreateTweet />
       </div>
-      {displayTweets.map((displayTweet) => (
-        <DispTweets displayTweets={displayTweet} />
-      ))}
+        <DispTweets displayTweets={displayTweets} />
     </div>
   );
 };
