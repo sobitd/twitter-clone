@@ -41,7 +41,7 @@
 /* sidebar styling */
 .sidebar {
   flex: 0.2;
-  min-width:250px;
+  min-width: 250px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -111,7 +111,7 @@
   border-radius: 50px;
 }
 
-#tweet:hover{
+#tweet:hover {
   background-color: #1a8bd6;
   cursor: pointer;
 }
@@ -140,26 +140,119 @@
   border: none;
 }
 
+.tweet-box-image {
+  border: 1px solid #1d9bf0;
+  padding: 15px;
+}
+
 .create-tweet-box > input:focus {
   outline: none;
+}
+
+.create-tweet-button {
+  margin-top: 20px !important;
+  border-radius: 20px !important;
+  margin-left: 60% !important;
+  height: 45px !important;
+  background-color: #1d9bf0 !important;
+  color: whitesmoke !important;
+  text-transform: inherit;
+  width: 200px;
 }
 
 /* display tweets component styling */
 
 .display-tweets {
   display: flex;
-  align-items: flex-start;
-  border-bottom: 1px solid #e1e8ed;
-  padding-right: 10px;
+  min-height: 40px;
+  padding: 5px;
+  border-bottom: 0.3px solid #e2e2e2c4;
 }
 
 .display-tweets:hover {
   background-color: #f5f8fa;
   transition: 0.2s ease-in-out;
 }
-.user-avatar {
-  padding: 20px;
+#user-avatar {
+  height: 100%;
+  width: 68px;
 }
+
+#user-avatar > Avatar{
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  padding: 10px;
+  padding-left: 15px;  
+}
+
+#user-id{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#user-name{
+  font-weight: bold;
+}
+
+#display-tweets-body{
+  width: 90%;
+  padding-left: 10px;
+}
+
+#username, #date-posted{
+  color: #aab8c2;
+  margin-left: 5px;
+}
+
+#flex-disp{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#more-options{
+  display: flex;
+  width: 27px;
+  height: 27px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+#more-options:hover{
+  background-color: #e0f4ff;
+}
+
+#tweet-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#tweet-text{
+  width: 100%;
+  text-align: right;
+  margin-right: 3px;
+}
+
+#twitter-icons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 20px;
+  margin-top: 18px;
+  margin-bottom: 10px;
+}
+
+
+
+
+
+
+
 
 .tweet-body {
   flex: 1;

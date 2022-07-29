@@ -3,49 +3,67 @@ import { Avatar } from "@mui/material";
 import "../App.css";
 import {
   ChatBubbleOutline,
-  FavoriteBorder,
-  Publish,
   Repeat,
   VerifiedUser,
   Delete,
   Update,
+  Favorite,
 } from "@mui/icons-material";
 
 const DispTweets = ({
-  avatar,
-  text,
   image,
-  profileName,
+  caption,
+  name,
   username,
-  verified,
+  time,
+  replies,
+  retweets,
+  likes,
 }) => {
   return (
     <div className="display-tweets">
-      <div className="user-avatar">
-        <Avatar src={avatar} />
+      <div id="user-avatar">
+        <Avatar src={image} />
       </div>
-      <div className="tweet-body">
-        <div className="tweet-header">
-          <div className="tweet-header-text">
-            <h3>
-              {profileName}{" "}
-              <span className="verified-badge">
-                {verified && <VerifiedUser className="badge" />} {username}
-              </span>
-            </h3>
-          </div>
-          <div className="tweet-body-text">
-            <p>{text}</p>
-          </div>
+      <div id="display-tweets-body">
+        <div id="user-id">
+          <span id="flex-disp">
+            <p id="user-name">{name}</p>
+            <p id="username">{username}</p>
+            <VerifiedUser />
+            <p id="date-posted">{time}</p>
+          </span>
+          <span id="more-options">
+            <Delete fontSize="small" />
+            <Update fontSize="small" />
+          </span>
         </div>
-        <img src={image} alt="" />
-        <div className="tweet-footer">
-          <ChatBubbleOutline fontSize="small" />
-          <Repeat fontSize="small" />
-          <FavoriteBorder fontSize="small" />
-          <Update fontSize="small" />
-          <Delete fontSize="small" />
-          <Publish fontSize="small" />
+
+        <div id="tweet-box">
+          <p id="tweet-text">{caption}</p>
+        </div>
+
+        <div id="twitter-icons">
+          <div id="comments">
+            <span className="comment" id="icon">
+              <ChatBubbleOutline fontSize="small" />
+            </span>
+            <p id="replies-text">{replies}</p>
+          </div>
+
+          <div id="retweets">
+            <span className="retweet" id="icon">
+              <Repeat fontSize="small" />
+            </span>
+            <p id="retweet-text">{retweets}</p>
+          </div>
+
+          <div id="likes">
+            <span className="like" id="icon">
+              <Favorite fontSize="small" />
+            </span>
+            <p id="like-text">{likes}</p>
+          </div>
         </div>
       </div>
     </div>
