@@ -233,8 +233,10 @@
 }
 #tweet-text{
   width: 100%;
-  text-align: right;
+  text-align: left;
   margin-right: 3px;
+  font-size: 1rem;
+  font-weight: 400;
 }
 
 #twitter-icons{
@@ -247,13 +249,6 @@
   margin-bottom: 10px;
 }
 
-
-
-
-
-
-
-
 .tweet-body {
   flex: 1;
   padding: 10px;
@@ -265,13 +260,13 @@
 }
 
 .verified-badge {
-  font-weight: 600;
+  font-weight: 400;
   font-size: 12px;
   color: gray;
 }
 
 .verified-badge > .badge {
-  font-weight: 14px;
+  font-weight: 10px;
   color: #1da1f2;
 }
 
@@ -290,7 +285,7 @@
 .feed {
   flex: 0.5;
   border-right: #e1e8ed 1px solid;
-  min-width: fit-content;
+  min-width: 500px;
   overflow-y: scroll;
 }
 
