@@ -4,8 +4,7 @@ import { Avatar, Button } from "@mui/material";
 
 const CreateTweet = () => {
   const [newTweet, setNewTweet] = useState({
-    tweet: "",
-    image_url: "",
+    caption: "",
   });
 
   function handleChange(event) {
@@ -31,7 +30,7 @@ const CreateTweet = () => {
       <form onSubmit={handleCreateTweet}>
         {/* compose a new tweet */}
         <div className="create-tweet-box">
-          <Avatar />
+          <Avatar src="https://i.pinimg.com/564x/b2/bb/98/b2bb9888eebc1b602ec343441d3e5d8c.jpg" />
           <input
             value={newTweet.tweet}
             placeholder="What's happening?"
@@ -39,14 +38,6 @@ const CreateTweet = () => {
             onChange={handleChange}
           />
         </div>
-        {/* you can add an image  */}
-        <input
-          className="tweet-box-image"
-          value={newTweet.image_url}
-          placeholder="Enter image url"
-          type="text"
-          onChange={handleChange}
-        />
         <Button type="submit" className="create-tweet-button">
           Tweet
         </Button>
