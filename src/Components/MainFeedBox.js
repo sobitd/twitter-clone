@@ -7,7 +7,7 @@ const MainFeedBox = () => {
   const [displayTweets, setDisplayTweets] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:8000/Tweets")
+    fetch("https://twitter-server-app.herokuapp.com/tweets")
       .then((res) => res.json())
       .then((displayTweets) => setDisplayTweets(displayTweets));
   }, []);

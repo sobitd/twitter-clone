@@ -14,7 +14,7 @@ const CreateTweet = (props) => {
   function handleCreateTweet(e) {
     e.preventDefault();
 
-    fetch("http://localhost:8000/Tweets", {
+    fetch("https://twitter-server-app.herokuapp.com/tweets", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
