@@ -21,6 +21,7 @@
 ### Live Link
 
 - Click this link to view the live application [https://twittr-clone.netlify.app//]
+- Click this link to view the server-side json [https://twitter-server-app.herokuapp.com/tweets]
 
 
 ### Technology  Used
