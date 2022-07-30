@@ -29,8 +29,8 @@ const Tweet = ({
         <div id="user-id">
           <span id="flex-disp">
             <p id="user-name">{name}</p>
-            <p id="username">{username}</p>
-            <VerifiedUser />
+            <p id="username">@{username}</p>
+            <VerifiedUser className="verified" /> •
             <p id="date-posted">{time}</p>
           </span>
           <span id="more-options">

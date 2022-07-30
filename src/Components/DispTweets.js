@@ -4,7 +4,7 @@ import Tweet from "./Tweet";
 const DispTweets = ({ displayTweets }) => {
   return (
     <div>
-      {displayTweets.map((tweet) => (
+      {displayTweets.sort().map((tweet) => (
         <Tweet
           image={tweet.image}
           name={tweet.name}

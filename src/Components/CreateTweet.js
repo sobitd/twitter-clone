@@ -60,7 +60,7 @@ const CreateTweet = (props) => {
             onChange={(e) => setTime(timePosted())}
             type="hidden"
           />
-          <Avatar src={image} onChange={(e) => setImage(e.target.value)} />
+          <Avatar className="avatar" src={image} onChange={(e) => setImage(e.target.value)} />
           <input
             placeholder="What's happening?"
             type="text"
