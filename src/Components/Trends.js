@@ -6,7 +6,6 @@ import "../App.css";
 import {
   TwitterTimelineEmbed,
   TwitterHashtagButton,
-  TwitterTweetEmbed,
 } from "react-twitter-embed";
 
 const Trends = () => {
