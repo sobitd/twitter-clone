@@ -232,9 +232,7 @@
 }
 
 #tweet-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 5px;
 }
 #tweet-text {
   margin-bottom: 10px;
