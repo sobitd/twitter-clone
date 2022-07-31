@@ -12,6 +12,7 @@ const MainFeedBox = () => {
       .then((displayTweets) => setDisplayTweets(displayTweets));
   }, []);
 
+
   return (
     <div className="feed">
       <div className="feed-header">

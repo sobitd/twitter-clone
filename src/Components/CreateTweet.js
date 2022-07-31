@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "../App.css";
 import { Avatar, Button } from "@mui/material";
 
-const CreateTweet = (props) => {
+const CreateTweet = ({onAddItem}) => {
   const [caption, setCaption] = useState("");
   const [name, setName] = useState("Kimani");
   const [username, setUsername] = useState("kimani");
@@ -19,7 +19,6 @@ const CreateTweet = (props) => {
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault();
 
     const postData = {
       name: name,
@@ -37,12 +36,12 @@ const CreateTweet = (props) => {
       body: JSON.stringify(postData),
     })
       .then((r) => r.json())
-      .then((newTweet) => console.log(newTweet));
+      .then((newTweet) => onAddItem(newTweet));
   };
 
   return (
     <div className="tweet-container">
-      <form>
+      <form onSubmit={handleSubmit}>
         {/* compose a new tweet */}
         <div className="create-tweet-box">
           <input
@@ -60,18 +59,18 @@ const CreateTweet = (props) => {
             onChange={(e) => setTime(timePosted())}
             type="hidden"
           />
-          <Avatar className="avatar" src={image} onChange={(e) => setImage(e.target.value)} />
+          <Avatar
+            className="avatar"
+            src={image}
+            onChange={(e) => setImage(e.target.value)}
+          />
           <input
             placeholder="What's happening?"
             type="text"
             onChange={(e) => setCaption(e.target.value)}
           />
         </div>
-        <Button
-          type="submit"
-          onClick={handleSubmit}
-          className="create-tweet-button"
-        >
+        <Button type="submit" className="create-tweet-button">
           Tweet
         </Button>
       </form>
