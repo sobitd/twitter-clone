@@ -19,7 +19,7 @@ const CreateTweet = ({onAddItem}) => {
   };
 
   const handleSubmit = (e) => {
-
+    e.preventDefault();
     const postData = {
       name: name,
       username: username,
