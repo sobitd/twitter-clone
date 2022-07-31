@@ -10,7 +10,7 @@ const DispTweets = ({ displayTweets, setDisplayTweets }) => {
   return (
     <div>
       <CreateTweet onAddItem={handleNewTweet} />
-      {/* {displayTweets.sort().map((tweet) => (
+      {displayTweets.sort().map((tweet) => (
         <Tweet
           key={tweet.id}
           image={tweet.image}
@@ -22,7 +22,7 @@ const DispTweets = ({ displayTweets, setDisplayTweets }) => {
           retweets={tweet.retweets}
           likes={tweet.likes}
         />
-      ))} */}
+      ))}
     </div>
   );
 };

@@ -17,7 +17,7 @@ const MainFeedBox = () => {
     <div className="feed">
       <div className="feed-header">
         <h2>Home</h2>
-        <CreateTweet />
+        {/* <CreateTweet /> */}
       </div>
         <DispTweets displayTweets={displayTweets} />
     </div>
