@@ -4,11 +4,12 @@ import "../App.css";
 import {
   ChatBubbleOutline,
   Repeat,
-  VerifiedUser,
   Delete,
   Update,
   Favorite,
 } from "@mui/icons-material";
+import VerifiedIcon from '@mui/icons-material/Verified';
+
 
 const Tweet = ({
   image,
@@ -30,7 +31,7 @@ const Tweet = ({
           <span id="flex-disp">
             <p id="user-name">{name}</p>
             <p id="username">@{username}</p>
-            <VerifiedUser className="verified" /> •
+            <VerifiedIcon className="verified" /> •
             <p id="date-posted">{time}</p>
           </span>
           <span id="more-options">

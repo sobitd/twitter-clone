@@ -198,8 +198,7 @@
 
 .verified {
   color: #1a8bd6;
-  font-size: 12px;
-  font-weight: 600;
+  padding: 0 5px;
 }
 
 #display-tweets-body {
