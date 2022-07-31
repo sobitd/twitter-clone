@@ -12,14 +12,13 @@ const MainFeedBox = () => {
       .then((displayTweets) => setDisplayTweets(displayTweets));
   }, []);
 
-
   return (
     <div className="feed">
       <div className="feed-header">
         <h2>Home</h2>
-        {/* <CreateTweet /> */}
+        <CreateTweet />
       </div>
-        <DispTweets displayTweets={displayTweets} />
+      <DispTweets displayTweets={displayTweets} />
     </div>
   );
 };

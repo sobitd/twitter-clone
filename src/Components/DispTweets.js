@@ -1,5 +1,4 @@
 import React from "react";
-import CreateTweet from "./CreateTweet";
 import Tweet from "./Tweet";
 
 const DispTweets = ({ displayTweets, setDisplayTweets }) => {
@@ -9,9 +8,9 @@ const DispTweets = ({ displayTweets, setDisplayTweets }) => {
 
   return (
     <div>
-      <CreateTweet onAddItem={handleNewTweet} />
       {displayTweets.sort().map((tweet) => (
         <Tweet
+          onAddItem={handleNewTweet}
           key={tweet.id}
           image={tweet.image}
           name={tweet.name}
