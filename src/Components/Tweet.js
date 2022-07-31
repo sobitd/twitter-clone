@@ -1,14 +1,10 @@
 import React from "react";
 import { Avatar } from "@mui/material";
 import "../App.css";
-import {
-  ChatBubbleOutline,
-  Repeat,
-  Delete,
-  Update,
-  Favorite,
-} from "@mui/icons-material";
-import VerifiedIcon from '@mui/icons-material/Verified';
+import VerifiedIcon from "@mui/icons-material/Verified";
+import { FaRegComment } from "react-icons/fa";
+import { AiOutlineRetweet, AiOutlineEdit } from "react-icons/ai";
+import { MdOutlineFavoriteBorder, MdOutlineDelete } from "react-icons/md";
 
 
 const Tweet = ({
@@ -35,8 +31,7 @@ const Tweet = ({
             <p id="date-posted">{time}</p>
           </span>
           <span id="more-options">
-            <Delete fontSize="small" />
-            <Update fontSize="small" />
+            <MdOutlineDelete />
           </span>
         </div>
 
@@ -47,23 +42,29 @@ const Tweet = ({
         <div id="twitter-icons">
           <div id="comments">
             <span className="comment" id="icon">
-              <ChatBubbleOutline fontSize="small" />
+              <FaRegComment />
             </span>
             <p id="replies-text">{replies}</p>
           </div>
 
           <div id="retweets">
             <span className="retweet" id="icon">
-              <Repeat fontSize="small" />
+              <AiOutlineRetweet />
             </span>
             <p id="retweet-text">{retweets}</p>
           </div>
 
           <div id="likes">
             <span className="like" id="icon">
-              <Favorite fontSize="small" />
+              <MdOutlineFavoriteBorder />
             </span>
             <p id="like-text">{likes}</p>
+          </div>
+
+          <div id="patch">
+            <span className="update" id="icon">
+            <AiOutlineEdit />
+            </span>
           </div>
         </div>
       </div>
