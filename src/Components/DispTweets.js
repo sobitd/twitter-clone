@@ -5,7 +5,7 @@ const DispTweets = ({ displayTweets }) => {
   return (
     <div>
       {displayTweets.sort().map((tweet) => (
-        <Tweet
+        <Tweet key={tweet.id}
           image={tweet.image}
           name={tweet.name}
           username={tweet.username}

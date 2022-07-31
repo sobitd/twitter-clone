@@ -5,7 +5,7 @@ import { Avatar, Button } from "@mui/material";
 const CreateTweet = (props) => {
   const [caption, setCaption] = useState("");
   const [name, setName] = useState("Kimani");
-  const [username, setUsername] = useState("@kimani");
+  const [username, setUsername] = useState("kimani");
   const [image, setImage] = useState(
     "https://i.pinimg.com/564x/b2/bb/98/b2bb9888eebc1b602ec343441d3e5d8c.jpg"
   );
