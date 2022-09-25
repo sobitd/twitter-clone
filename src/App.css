@@ -48,79 +48,7 @@ body {
 }
 
 /* sidebar styling */
-.sidebar {
-  flex: 0.2;
-  min-width: 250px;
-  margin-top: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-}
 
-.twitter-icon-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  transition: 0.2s;
-  width: 50px;
-  height: 50px;
-  margin-top: 13px;
-  margin-left: 20px;
-}
-
-.twitter-icon-wrapper:hover {
-  background: #e0f3ff;
-}
-
-#nav-title {
-  font-size: 20px;
-  padding-left: 5px;
-}
-
-#row {
-  display: flex;
-  align-items: center;
-  outline: none;
-  padding: 10px;
-  border: none;
-  padding-right: 20px;
-  margin-left: 13px;
-  margin-top: 5px;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: 0.3s ease-out;
-  background: transparent;
-}
-
-#row:hover {
-  background: #e2e2e2c4;
-}
-
-.twitter-icon {
-  color: #1d9bf0;
-  font-size: 32px;
-}
-
-#tweet {
-  width: 100%;
-  height: 50px;
-  color: white;
-  transition: 0.2s;
-  font-size: 17px;
-  font-weight: 900;
-  background-color: #1d9bf0;
-  margin-top: 20px;
-  outline: none;
-  border: none;
-  border-radius: 30px;
-}
-
-#tweet:hover {
-  background-color: #1a8bd6;
-  cursor: pointer;
-}
 
 /* Create Tweet Component */
 .tweet-container {

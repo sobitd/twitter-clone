@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import Sidebar from "./Components/Sidebar";
+import Sidebar from "./Components/SideBar/Sidebar";
 import MainFeedBox from "./Components/MainFeedBox";
 import Trends from "./Components/Trends";
 

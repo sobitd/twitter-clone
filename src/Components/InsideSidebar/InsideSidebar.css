@@ -1,0 +1,18 @@
+.sidebar-link{
+    display: flex;
+    align-items: cover;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.sidebar-link:hover{
+    transition: color 100ms ease-out;
+    color: #50b7f5;
+    background-color: #e8f5fe;
+}
+
+.sidebar-link > h2 {
+    font-weight: 700;
+    font-size: 20px;
+    margin-right: 20px;
+}
