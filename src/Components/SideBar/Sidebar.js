@@ -11,23 +11,34 @@ import { BiHomeCircle } from "react-icons/bi";
 import { BiHash } from "react-icons/bi";
 import { BiBookmark } from "react-icons/bi";
 import { IoNotificationsOutline } from "react-icons/io5";
-import { Button } from "@mui/material";
+import { Button, Link } from "@mui/material";
 
 function Sidebar() {
   return (
-    <div className="sidebar">
-      <InsideSidebar Icon={BiHomeCircle} text="Home" />
-      <InsideSidebar Icon={BiHash} text="Explore" />
-      <InsideSidebar Icon={IoNotificationsOutline} text="Notifications" />
-      <InsideSidebar Icon={MailOutlineIcon} text="Messages" />
-      <InsideSidebar Icon={BiBookmark} text="Bookmarks" />
-      <InsideSidebar Icon={ListAltIcon} text="Lists" />
-      <InsideSidebar Icon={PermIdentitySharpIcon} text="Profile" />
-      <InsideSidebar Icon={MoreHorizIcon} text="More" />
+    <div className="sidebar wrapper">
+      <Link href="/">
+        <TwitterIcon className="twitter-icon mobileHidden" />
+      </Link>
 
-      <Button variant="outlined" className="sidebar-tweetButton mobileHidden">
-        Tweet
-      </Button>
+      <div className="sidebar">
+        <InsideSidebar Icon={BiHomeCircle} text="Home" />
+        <InsideSidebar Icon={BiHash} text="Explore" />
+        <InsideSidebar Icon={IoNotificationsOutline} text="Notifications" />
+        <InsideSidebar Icon={MailOutlineIcon} text="Messages" />
+        <InsideSidebar Icon={BiBookmark} text="Bookmarks" />
+        <InsideSidebar Icon={ListAltIcon} text="Lists" />
+        <InsideSidebar Icon={PermIdentitySharpIcon} text="Profile" />
+        <InsideSidebar Icon={MoreHorizIcon} text="More" />
+
+        <Button
+          variant="outlined"
+          className="sidebar-tweetButton mobileHidden"
+          fullWidth
+          href="/"
+        >
+          Tweet
+        </Button>
+      </div>
     </div>
   );
 }
